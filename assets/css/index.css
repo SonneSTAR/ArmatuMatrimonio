@@ -1,0 +1,115 @@
+
+
+main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.right{
+    float: right;
+}
+
+main{
+    padding: 100px;
+    margin: 0 auto;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+}
+body{
+    background-image: url('../img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+footer{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    height: 10vh;
+    margin: 0 auto;
+    line-height:8vh;
+}
+main:not(p,h1,h2,h3,h4,h5){
+    opacity: 0.9;
+}
+.custom_size{
+    width: 50%;
+}
+.main{
+    min-height:100vh;
+    max-height:100vh;
+}
+nav a {
+    color: black;
+}
+nav a:hover{
+    color: #FAC119;
+}
+
+.fade-in {
+	animation: fadeIn 2s;
+  	opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 0.9;
+  }
+}
+
+
+@media (max-width: 600px) {
+    input{
+        width: 100%;
+    }
+        
+  }
+
+main{
+  overflow-y: hidden;
+}
+.spinner {
+  animation: loader 0.5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  50%{
+    font-size: 22px;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.fade-out {
+	animation: fadeOut 0.5s;
+  	opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+  	opacity: 1;
+  }
+  to {
+ 	opacity: 0;
+  }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
